@@ -1,0 +1,35 @@
+.wood {
+  position: relative;
+  background-color: black;
+}
+
+
+.wood::before {
+  background-image: url("/wooden.jpg");
+  content: "";
+  position: absolute;
+  inset:0;
+  opacity: 0.4;
+}
+
+.woodchild{
+  isolation: isolate;
+}
+
+.home {
+  position: relative;
+  background-color: black;
+}
+
+
+.home::before {
+  background-image: url("/wooden.jpg");
+  content: "";
+  position: absolute;
+  inset:0;
+  opacity: 0.4;
+}
+
+.homechild{
+  isolation: isolate;
+}
