@@ -1,6 +1,5 @@
 import { Container, Nav, Navbar } from 'react-bootstrap'
-import { ToastContainer,toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
+
 
 function Header() {
   const handleLogout=()=>{
@@ -21,7 +20,7 @@ function Header() {
         <Navbar.Collapse  id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link className='text-white m-2' href="/">Our Story</Nav.Link>
-            <Nav.Link className='text-white m-2'>Our Menu</Nav.Link>
+            <Nav.Link className='text-white m-2' href="/menu"> Our Menu</Nav.Link>
             <Nav.Link className='text-white m-2' href="/difference">Our Differences</Nav.Link>
             <Nav.Link className='text-white m-2' href="/contact">Contact</Nav.Link>
             <Nav.Link className='text-white m-2' href="https://www.doordash.com/store/el-pez-kitchen-and-sushi-san-diego-710770/">Order</Nav.Link>
@@ -30,7 +29,6 @@ function Header() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    <ToastContainer/>
     </div>
   )
 }

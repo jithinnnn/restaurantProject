@@ -6,7 +6,6 @@ import Menu from './Pages/Menu'
 import Difference from './Pages/Difference'
 import Contact from './Pages/Contact'
 import Auth from './Pages/Auth'
-import Header from './Components/Header'
 import Footer from './Components/Footer'
 
 function App() {
@@ -20,7 +19,7 @@ function App() {
         <Route path='/order' element={<Order></Order>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
         <Route path='/difference' element={<Difference></Difference>}></Route>
-        <Route path='/home' element={<Home insideHome></Home>}></Route>
+        <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/register' element={<Auth insideRegister></Auth>}></Route>
     </Routes>
     <Footer></Footer>
