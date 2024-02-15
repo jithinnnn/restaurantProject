@@ -19,7 +19,7 @@ function Header() {
         <Navbar.Toggle className='text-white' aria-controls="basic-navbar-nav" />
         <Navbar.Collapse  id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link className='text-white m-2' href="/">Our Story</Nav.Link>
+            <Nav.Link className='text-white m-2' href="/home">Our Story</Nav.Link>
             <Nav.Link className='text-white m-2' href="/menu"> Our Menu</Nav.Link>
             <Nav.Link className='text-white m-2' href="/difference">Our Differences</Nav.Link>
             <Nav.Link className='text-white m-2' href="/contact">Contact</Nav.Link>
