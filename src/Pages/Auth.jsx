@@ -74,14 +74,14 @@ function Auth({insideRegister}) {
                      <h5 style={{fontFamily:'Bebas Neue'}} className='p-2 text-white'>Sign {insideRegister?"Up":"In"} to your Account</h5>
                          <input className='form-control' type="text" placeholder='Email' value={userInputData.email} onChange={e=>setUserInputData({...userInputData,email:e.target.value})} />
                          <input className='form-control mt-2' type="text" placeholder='Username' value={userInputData.username} onChange={e=>setUserInputData({...userInputData,username:e.target.value})} />
-                         <input className=' mt-2 form-control' type="text" placeholder='Password' value={userInputData.password} onChange={e=>setUserInputData({...userInputData,password:e.target.value})} />
+                         <input className=' mt-2 form-control' type="password" placeholder='Password' value={userInputData.password} onChange={e=>setUserInputData({...userInputData,password:e.target.value})} />
                          <button onClick={handleRegister}  className='mt-2 btn btn-success homechild w-100'>{insideRegister?"Register":"Login"}</button>
                          <a href={insideRegister?'/login':'/register'} style={{fontFamily:'Bebas Neue',textDecoration:'none'}} className='p-2 mt-1 w-50 text-white'> {insideRegister?"Already Registered? Login here!":"Do not have an Account? Register Here!"}</a>
                      </form>:
                       <form action="">
                       <h5 style={{fontFamily:'Bebas Neue'}} className='p-2 text-white'>Sign {insideRegister?"Up":"In"} to your Account</h5>
                           <input className='form-control' type="text" placeholder='Email' value={userInputData.email} onChange={e=>setUserInputData({...userInputData,email:e.target.value})} />
-                          <input className=' mt-2 form-control' type="text" placeholder='Password' value={userInputData.password} onChange={e=>setUserInputData({...userInputData,password:e.target.value})}/>
+                          <input className=' mt-2 form-control' type="password" placeholder='Password' value={userInputData.password} onChange={e=>setUserInputData({...userInputData,password:e.target.value})}/>
                           <button onClick={handleLogin} className='mt-2 btn btn-success homechild w-100'>{insideRegister?"Register":"Login"} {loginStatus&&<Spinner animation="border" variant="light" />}</button>
                           <a href={insideRegister?'/login':'/register'} style={{fontFamily:'Bebas Neue',textDecoration:'none'}} className='p-2 mt-1 w-50 text-white'> {insideRegister?"Already Registered? Login here!":"Do not have an Account? Register Here!"}</a>
                       </form>
