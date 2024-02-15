@@ -1,9 +1,12 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
+import Header from '../Components/Header'
 
 function Contact() {
+
   return (
     <div>
+        <Header></Header>
         <div style={{backgroundImage:'url(/home.jpg)',backgroundSize:'100%',overflowX:'hidden',height:'550px'}}>
             <div className='bg-black' style={{opacity:'0.6'}}>
                 <div className=' text-center'>

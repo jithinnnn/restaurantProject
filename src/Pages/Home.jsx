@@ -1,10 +1,13 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
+import Header from '../Components/Header'
+
 
 
 function Home() {
   return (
     <div>
+        <Header></Header>
         <div style={{height:'550px',backgroundImage:"url(/home.jpg)",backgroundSize:'100%'}}>
             <div style={{opacity:'0.6', flexDirection:'column'}} className=' p-4 d-flex align-items-center justify-content-center bg-black'>
                 <img style={{width:"200px"}} src="https://i.postimg.cc/FHSKX03m/5c4cf99ac49ea64f5db0dd41-el-pez-sushi5-p-500.png" alt="" />

@@ -1,9 +1,11 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
+import Header from '../Components/Header'
 
 function Difference() {
   return (
     <div>
+        <Header></Header>
         <div style={{backgroundImage:"url(/floral.png)"}}>
                 <div className=' p-5 d-flex align-items-center justify-content-center container w-75'>
                     <Row>

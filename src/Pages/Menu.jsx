@@ -1,9 +1,12 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
+import Header from '../Components/Header'
+
 
 function Menu() {
   return (
     <div>
+        <Header></Header>
         <div className=' text-center wood border text-white' style={{backgroundSize:'100%',fontFamily:'Bebas Neue',position:'relative',zIndex:'2'}}>
        <div style={{fontFamily:'Black Ops One'}} className='woodchild p-3'>
             <h1>EL MENU</h1>
